@@ -1,0 +1,20 @@
+---
+# tasks file for ansible-role-dw-bdd-python-example
+- name: Install nginx server
+  apt:
+    name: nginx
+    update_cache: true
+    state: present
+- name: Block all ports
+  ufw:
+    state: enabled
+    policy: reject
+    log: yes
+- name: Allow ssh
+  ufw:
+    rule: allow
+    name: OpenSSH
+- name: Allow 443
+  ufw:
+    rule: allow
+    port: 443
