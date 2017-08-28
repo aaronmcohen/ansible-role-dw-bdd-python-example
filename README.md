@@ -6,7 +6,7 @@ The following software needs to be installed on your local machine to be success
 
 - [Virtual Box](https://www.virtualbox.org/)
 - [Python 2.7](https://www.python.org/)
-- [Make](https://en.wikipedia.org/wiki/Make_(software)
+- [Make](https://en.wikipedia.org/wiki/Make_(software))
 
 ## Special consideration
 If you are running the Anaconda Python this may not work.  Please point to the python distribution that came with your OS. This can be done by replacing "-p python2" with  "--python=/usr/bin/python2.7" in the [Makefile](https://github.ibm.com/watson-foundation-services/ansible-role-base-example/blob/master/Makefile#L6).
